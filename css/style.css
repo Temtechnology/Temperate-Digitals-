@@ -261,3 +261,28 @@ footer{
 
 
 
+
+
+
+/* Gallery Grid Styling */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+
+
