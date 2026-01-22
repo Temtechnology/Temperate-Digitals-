@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>garden-galary</title>
+    <link rel="stylesheet" href="css/project.css">
+    
+</head>
+
+    <body>
+        
+        <header>
+            <div class="content-wrapper">
+                <h1>Gardening Service Project</h1>
+                <h2>Visual Walkthrough</h2>
+            </div> 
+        </header>
+
+        <main class="content-wrapper">
+            
+            <!-- PROJECT SUMMARY SECTION -->
+            <section class="project-summary">
+                <a class="btn" href="resume.html">Back to Resume</a>
+                <h3>📋 Project Overview</h3>
+                <div class="summary-card">
+                    <p class="summary-text">
+                        A fully responsive <strong>Gardening Service Website</strong> designed and developed 
+                        in a local development environment. This project showcases a complete business website 
+                        with custom styling, optimized user experience, and SEO-ready structure.
+                    </p>
+                    
+                    <div class="summary-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">🖥️</span>
+                            <div class="detail-text">
+                                <strong>Environment</strong>
+                                <p>Built locally using XAMPP server</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🎨</span>
+                            <div class="detail-text">
+                                <strong>Customization</strong>
+                                <p>Colors, forms, and layouts fully customized</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🎯</span>
+                            <div class="detail-text">
+                                <strong>Purpose</strong>
+                                <p>Practice project & Learning</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🌐</span>
+                            <div class="detail-text">
+                                <strong>Status</strong>
+                                <p>Not hosted (local development)</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- DEVELOPMENT TOOLS SECTION -->
+            <section class="dev-tools">
+                <h3>🛠️ Development Tools</h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <img src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg" alt="XAMPP" onerror="this.src='https://img.icons8.com/color/96/server.png'">
+                        <strong>XAMPP</strong>
+                        <span>Local Server</span>
+                    </div>
+                    <div class="tool-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress">
+                        <strong>WordPress</strong>
+                        <span>CMS Platform</span>
+                    </div>
+                    <div class="tool-card">
+                        <img src="https://developer.developer-developer.developer/wp-content/uploads/2021/01/astra-theme-logo.png" alt="Astra Theme" onerror="this.src='https://img.icons8.com/fluency/96/design.png'">
+                        <strong>Astra Theme</strong>
+                        <span>Starter Theme</span>
+                    </div>
+                    <div class="tool-card">
+                        <img src="https://ps.w.org/jetelements-developer-edition/assets/icon-256x256.png" alt="Elementor" onerror="this.src='https://img.icons8.com/color/96/web-design.png'">
+                        <strong>Elementor</strong>
+                        <span>Page Builder</span>
+                    </div>
+                    <div class="tool-card">
+                        <img src="https://yoast.com/app/uploads/2020/09/yoast-logo-icon.png" alt="Yoast SEO" onerror="this.src='https://img.icons8.com/color/96/search--v1.png'">
+                        <strong>Yoast SEO</strong>
+                        <span>SEO Plugin</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- GALLERY SECTION -->
+            <!-- GALLERY SECTION -->
+
+            <section class="gallery">
+                <h3>🖼️ Gallery</h3>
+                <p class="gallery-hint">Click on any image to view</p>
+                <div class="image-grid">
+                    <img src="images/HOME.jpeg" alt="Home Page" onclick="openLightbox(0)">
+                    <img src="images/about-us.jpeg" alt="About Us" onclick="openLightbox(1)">
+                    <img src="images/contact-us.jpeg" alt="Contact Us" onclick="openLightbox(2)">
+                    <img src="images/our services.jpeg" alt="Our Services" onclick="openLightbox(3)">
+                    <img src="images/our-project.jpeg" alt="Our Projects" onclick="openLightbox(4)">
+                    <img src="images/why-us.jpeg" alt="Why Us" onclick="openLightbox(5)">
+                </div>
+            </section>
+
+            <!-- LIGHTBOX -->
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <span class="close">&times;</span>
+                <span class="prev" onclick="event.stopPropagation(); changeImage(-1)">&#10094;</span>
+                <img id="lightbox-img" src="">
+                <span class="next" onclick="event.stopPropagation(); changeImage(1)">&#10095;</span>
+            </div>
+
+        </main>
+
+         <footer>
+    <div class="footer-content">
+        <p>© 2023 by Okhiria Temperate Ehis | <a href="mailto:otemperate@gmail.com">otemperate@gmail.com</a></p>
+        
+        <ul class="socials">
+            <li><a href="https://m.me/61584522664198" target="_blank"><img src="images/icon-logo-facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.linkedin.com/in/temperate-okhiria-bb332926b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BShPHgMoHT0GamDjy%2BlNcsQ%3D%3D" target="_blank"><img src="images/icon-logo-linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://wa.me/2347077905197" target="_blank">
+            <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp"></a></li>
+    </li>
+        </ul>
+    </div>
+</footer>
+        <script src="js/gallery.js"></script>
+    </body>
+</html>

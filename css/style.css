@@ -47,12 +47,53 @@ h3{
 }
 @media screen and (max-width:650px){
     h1{
-    font-size: rem;
+    font-size: 4rem;
 }
 h2{
     font-size: 2.4rem;
 }
 
+}
+
+/* ========== TABLET (768px and below) ========== */
+@media (max-width: 768px) {
+    header {
+        padding: 2rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header h2 {
+        font-size: 1.1rem;
+    }
+}
+
+/* ========== MOBILE (480px and below) ========== */
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    header h1 {
+        font-size: 4rem;
+    }
+    
+    header h2 {
+        font-size: 2rem;
+    }
+}
+
+/* ========== SMALL MOBILE (360px and below) ========== */
+@media (max-width: 360px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    header h2 {
+        font-size: 1rem;
+    }
 }
 /*Links*/
 a {
@@ -154,6 +195,40 @@ RESUME
         font-size: 2.6rem;
     }
 }
+.skills {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+}
+
+.skills h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2d3748;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    background: #f8faf5;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #333;
+    border-left: 4px solid #4a7c23;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateX(5px);
+    background: #eef5e6;
+}
 
 
 /* PROJECTS
@@ -231,38 +306,85 @@ RESUME
 
 /*FOOTER
 --------------------------------------*/
-footer{
-    background: #222222;
-    color: #f6f6f6;
+/* ========== FOOTER - SINGLE LINE ON DESKTOP ========== */
+footer {
+    background: #2d3748;
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
 }
-.socials{
-    list-style-type: none;
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 2rem;
+}
+
+footer a {
+    color: #68d391;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #9ae6b4;
+    text-decoration: underline;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     padding: 0;
-    
+    margin: 0;
 }
-.socials li{
-    display: inline-block;
-    margin-left: 10px;
-}
-.socials img{
+
+.socials img {
     width: 35px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.socials a:hover img {
+    transform: translateY(-5px);
+}
+
+/* ========== TABLET & MOBILE - STACK VERTICALLY ========== */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
     
-}
-.socials img:hover{
-    opacity: 0.5;
-}
-@media screen and(min-width: 860px){
-    footer{
-        display: flex;
-        justify-content: space-between;
-        padding: 0 20px;
+    footer p {
+        font-size: 1.5rem;
     }
 }
 
-
-
-
-
+@media (max-width: 480px) {
+    footer {
+        padding: 1.5rem 1rem;
+    }
+    
+    footer p {
+        font-size: 0.85rem;
+    }
+    
+    .socials img {
+        width: 30px;
+        height: 28px;
+    }
+}
 
 /* Gallery Grid Styling */
 .image-grid {
@@ -282,6 +404,9 @@ footer{
 .image-grid img:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
+
+
+
 
 
 
